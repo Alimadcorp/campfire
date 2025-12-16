@@ -43,6 +43,8 @@
   --color-hc-tortoise: var(--hc-tortoise);
   
   --font-primary: var(--font-primary);
+  --font-subheading: var(--font-subheading);
+  --font-serif: var(--font-source-serif);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }

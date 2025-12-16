@@ -5,9 +5,9 @@ export default function Home() {
       suppressHydrationWarning
     >
       <main className="flex w-full max-w-3xl flex-col items-center gap-10 px-8 py-32 text-center">
-        <h1 className="text-6xl text-white text-shadow-lg">CAMPFIRE LAHORE</h1>
+        <h1 className="text-8xl text-white text-shadow-lg">CAMPFIRE LAHORE</h1>
 
-        <p className="max-w-xl text-lg text-white/90 tracking-wide">
+        <p className="max-w-xl text-2xl text-white/90 tracking-wide --font-subheading">
           Game jam for high schoolers in 200+ cities<br/>Feb 28 - Mar 1, 2026
         </p>
 
