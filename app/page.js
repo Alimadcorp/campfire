@@ -32,34 +32,34 @@ const faqs = [
   {
     question: "What is a game jam?",
     answer:
-      "A game jam is an event where you build a game from scratch in a short time period! It's all about creativity, teamwork, and having fun while learning new skills."
+      "A game jam is an event where you build a game from scratch in a short time period! It's all about creativity, teamwork, and having fun while learning new skills.",
   },
   {
     question: "Am I eligible?",
     answer:
-      "If you're a high schooler (or younger), you're eligible! No prior experience required — just bring your enthusiasm and willingness to learn."
+      "If you're a high schooler (or younger), you're eligible! No prior experience required — just bring your enthusiasm and willingness to learn.",
   },
   {
     question: "But I've never hacked before!",
     answer:
-      "Perfect! Game jams are designed for beginners. You'll have workshops, mentors, and teammates to help you every step of the way."
+      "Perfect! Game jams are designed for beginners. You'll have workshops, mentors, and teammates to help you every step of the way.",
   },
   {
     question: "All this, for free?",
     answer:
-      "Yes! Everything is completely free — venue, food, swag, workshops, and prizes. Hack Club covers all costs so you can focus on creating."
+      "Yes! Everything is completely free — venue, food, swag, workshops, and prizes. Hack Club covers all costs so you can focus on creating.",
   },
   {
     question: "What do I need to bring?",
     answer:
-      "Just bring yourself, a laptop, charger, and any personal items you need. We'll provide food, drinks, and everything else!"
-  }
+      "Just bring yourself, a laptop, charger, and any personal items you need. We'll provide food, drinks, and everything else!",
+  },
 ];
 
 function FAQ() {
   return (
-    <section className="mx-auto px-8 py-24">
-      <h2 className="mb-12 text-center text-5xl font-primary">FAQ</h2>
+    <section className="mx-auto px-0 py-24">
+      <h2 className="mb-12 text-center text-5xl font-primary solid-shadow">FAQ</h2>
       <div className="space-y-4">
         {faqs.map(({ question, answer }, idx) => (
           <details
@@ -69,7 +69,9 @@ function FAQ() {
             <summary className="cursor-pointer text-hc-brown list-none text-2xl font-subheading font-bold select-none">
               {question}
             </summary>
-            <p className="mt-4 text-black/70 leading-relaxed text-xl font-subheading">{answer}</p>
+            <p className="mt-4 text-black/70 leading-relaxed text-xl font-subheading">
+              {answer}
+            </p>
           </details>
         ))}
       </div>
@@ -89,18 +91,26 @@ export default function Home() {
           className="absolute w-full top-0 mask:linear-gradient(to_bottom,black_60%,transparent)"
         />
         <main className="flex w-full max-w-5xl flex-col items-center gap-5 px-8 pt-32 pb-8 text-center z-1">
-          <div className="flex flex-row">
-            <a href="https://hackclub.com">
+          <div className="flex flex-row items-center gap-2">
+            <a href="https://hackclub.com" className="relative w-28 h-10 hover:scale-105 transition-transform">
               <img
                 src="/hc-flag.png"
-                className="w-29 h-10 transition-transform hover:scale-105 image-solid-shadow box-shadow-[#0005]"
+                className="w-full h-full transition-transform duration-300 hover:opacity-20 image-solid-shadow"
+              />
+              <img
+                src="/hc-flag-red.png"
+                className="absolute inset-0 w-full h-full opacity-0 transition-opacity duration-300 hover:opacity-80 image-solid-shadow"
               />
             </a>
-            <div className="h-7 bg-white w-px m-2"></div>
-            <a href="https://opensauce.com">
+            <div className="h-7 bg-white w-px"></div>
+            <a href="https://opensauce.com" className="relative w-11 h-14 hover:scale-105 transition-transform">
               <img
                 src="/opensauce.webp"
-                className="w-11 h-14 transition-transform -translate-y-2 hover:scale-105 image-solid-shadow box-shadow-[#0005]"
+                className="w-full h-full transition-transform duration-300 -translate-y-2 hover:opacity-0 image-solid-shadow"
+              />
+              <img
+                src="/opensauce-yellow.webp"
+                className="absolute inset-0 w-full h-full opacity-0 transition-opacity -translate-y-2 duration-300 hover:opacity-100 image-solid-shadow"
               />
             </a>
           </div>
@@ -142,8 +152,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <FAQ/>
-          <footer className="w-full px-8 py-0 text-white">
+          <FAQ />
+          <footer className="w-full px-0 py-0 text-white">
             <div className="mx-auto grid gap-12 md:grid-cols-3 font-subheading">
               <div className="flex flex-col gap-4 md:text-right">
                 <p className="text-xl text-transparent font-subheading mb-0">
@@ -177,7 +187,7 @@ export default function Home() {
                   © 2026 Hack Club. 501(c)(3) nonprofit (EIN: 81-2908499)
                 </p>
               </div>
-              <div className="text-left text-base leading-relaxed md:col-span-2">
+              <div className="text-left text-base leading-relaxed md:col-span-2 md:text-white text-black">
                 <p className="text-xl font-subheading mb-4 opacity-80">
                   made with love by Hack Club & Open Sauce
                 </p>
@@ -188,7 +198,7 @@ export default function Home() {
                   you can make awesome projects.
                 </p>
 
-                <p className="mt-4 text-white/80">
+                <p className="mt-4 md:text-white/80 text-black/80">
                   In the past few years, we've partnered with GitHub to run{" "}
                   <a href="https://summer.hackclub.com">Summer of Making</a>,
                   hosted the{" "}
@@ -239,7 +249,13 @@ export default function Home() {
         </main>
         <img
           src="/woods.png"
-          className="absolute bottom-0 left-0 w-[110vw]
+          className="md:block absolute hidden bottom-0 left-0 w-[110vw]
+               mask-image:linear-gradient(to_top,black_40%,transparent_80%)
+               [-webkit-mask-image:linear-gradient(to_top,black_40%,transparent_80%)]"
+        />
+        <img
+          src="/woodsSm.png"
+          className="md:hidden absolute bottom-0 left-0 w-[110vw]
                mask-image:linear-gradient(to_top,black_40%,transparent_80%)
                [-webkit-mask-image:linear-gradient(to_top,black_40%,transparent_80%)]"
         />

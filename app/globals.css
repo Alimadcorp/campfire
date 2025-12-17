@@ -18,13 +18,6 @@
     --hc-paper: #ead6be;
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --background: #0a0a0a;
-      --foreground: #ededed;
-    }
-  }
-
   body {
     background-color: var(--background);
     color: var(--foreground);
@@ -41,7 +34,7 @@
   }
 
   .image-solid-shadow {
-    filter: drop-shadow(1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.15)));
+    filter: drop-shadow(1px 3px 0 var(--tw-shadow-color, rgba(0, 0, 0, 0.1)));
   }
 
   .hc-button {
@@ -65,7 +58,7 @@
   }
 
   a {
-    color: white;
+    font-weight: bold;
     opacity: 100%;
   }
 
@@ -75,6 +68,13 @@
 
   img {
     user-select: none;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
   }
 }
 
