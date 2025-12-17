@@ -1,6 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Metadata } from "next";
 import localFont from "next/font/local";
 
 export const primaryFont = localFont({
@@ -24,16 +22,40 @@ export const sourceSerif = Source_Serif_4({
 });
 
 export const metadata = {
-  title: "Campfire Lahore - Lahore Game jam",
+  title: "Campfire Lahore - Lahore Game Jam",
   description:
-    "Join Campfire Lahore in Lahore! A teen-led game jam where you'll build amazing games with other high schoolers. Food, workshops, and prizes included!",
+    "Join Campfire Lahore! A teen-led game jam where you'll build amazing games with other high schoolers. Part of the global Campfire event happening in 200+ cities on Feb 28 - Mar 1, 2026.",
   keywords:
-    "game jam, hackathon, teen coding, Hack Club, game development, Lahore, Lahore",
+    "game jam, hackathon, teen coding, Hack Club, game development, Lahore, Pakistan, Campfire",
   authors: [{ name: "Muhammad Ali", url: "https://alimad.co" }],
   alternates: {
-    canonical: "https://campfire.hackclub.com/lahore"
+    canonical: "https://campfire.hackclub.com/lahore",
   },
-  icons: "https://campfire.hackclub.com/favicon.png"
+  icons: "https://campfire.hackclub.com/favicon.png",
+  openGraph: {
+    title: "Campfire Lahore - Lahore Game Jam",
+    description:
+      "Join Campfire Lahore! A teen-led game jam where you'll build amazing games with other high schoolers. Feb 28 - Mar 1, 2026.",
+    url: "https://campfire.hackclub.com/lahore",
+    siteName: "Campfire",
+    images: [
+      {
+        url: "https://campfire.hackclub.com/og-banner.png",
+        width: 1200,
+        height: 630,
+        alt: "Campfire Lahore",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Campfire Lahore - Lahore Game Jam",
+    description:
+      "Join Campfire Lahore! A teen-led game jam where you'll build amazing games with other high schoolers. Feb 28 - Mar 1, 2026.",
+    images: ["https://campfire.hackclub.com/og-banner.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
