@@ -58,13 +58,15 @@ const faqs = [
 
 function FAQ() {
   return (
-    <section className="mx-auto px-0 py-24">
-      <h2 className="mb-12 text-center text-5xl font-primary solid-shadow">FAQ</h2>
-      <div className="space-y-4">
+    <section className="w-full px-0 py-24 flex flex-col items-center">
+      <h2 className="mb-12 text-center text-5xl font-primary solid-shadow">
+        FAQ
+      </h2>
+      <div className="flex flex-col items-center space-y-4 w-full">
         {faqs.map(({ question, answer }, idx) => (
           <details
             key={idx}
-            className="md:w-[60vw] w-[80vw] group rounded-2xl border-4 border-black/30 bg-secondary p-6"
+            className="w-[80vw] md:w-[60vw] group rounded-2xl border-4 border-black/30 bg-secondary p-6"
           >
             <summary className="cursor-pointer text-hc-brown list-none text-2xl font-subheading font-bold select-none">
               {question}
@@ -92,7 +94,10 @@ export default function Home() {
         />
         <main className="flex w-full max-w-5xl flex-col items-center gap-5 px-8 pt-32 pb-8 text-center z-1">
           <div className="flex flex-row items-center gap-2">
-            <a href="https://hackclub.com" className="relative w-28 h-10 hover:scale-105 transition-transform">
+            <a
+              href="https://hackclub.com"
+              className="relative w-28 h-10 hover:scale-105 transition-transform"
+            >
               <img
                 src="/hc-flag.png"
                 className="w-full h-full transition-transform duration-300 hover:opacity-20 image-solid-shadow"
@@ -103,7 +108,10 @@ export default function Home() {
               />
             </a>
             <div className="h-7 bg-white w-px"></div>
-            <a href="https://opensauce.com" className="relative w-11 h-14 hover:scale-105 transition-transform">
+            <a
+              href="https://opensauce.com"
+              className="relative w-11 h-14 hover:scale-105 transition-transform"
+            >
               <img
                 src="/opensauce.webp"
                 className="w-full h-full transition-transform duration-300 -translate-y-2 hover:opacity-0 image-solid-shadow"
