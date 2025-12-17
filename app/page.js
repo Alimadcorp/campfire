@@ -249,13 +249,13 @@ export default function Home() {
         </main>
         <img
           src="/woods.png"
-          className="md:block absolute hidden bottom-0 left-0 w-[110vw]
+          className="sm:block absolute hidden bottom-0 left-0 w-[110vw]
                mask-image:linear-gradient(to_top,black_40%,transparent_80%)
                [-webkit-mask-image:linear-gradient(to_top,black_40%,transparent_80%)]"
         />
         <img
           src="/woodsSm.png"
-          className="md:hidden absolute bottom-0 left-0 w-[110vw]
+          className="sm:hidden absolute bottom-0 left-0 w-[110vw]
                mask-image:linear-gradient(to_top,black_40%,transparent_80%)
                [-webkit-mask-image:linear-gradient(to_top,black_40%,transparent_80%)]"
         />
