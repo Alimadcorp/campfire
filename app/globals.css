@@ -11,9 +11,11 @@
 
     --hc-star: #384fbc;
     --hc-emerald: #52cb77;
-    --hc-brown: #ad684f;
+    --hc-brown: #2a1913;
     --hc-ice: #9be8fe;
     --hc-tortoise: #57ecd6;
+    --hc-border: #dca87e;
+    --hc-paper: #ead6be;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -29,15 +31,22 @@
     font-family: var(--font-serif, Arial, Helvetica, sans-serif);
   }
 
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) transparent;
+  }
+
   .solid-shadow {
-    text-shadow: var(--tw-text-shadow-color, rgb(0 0 0 / 0.15)) 2px 4px 0px;
+    text-shadow: var(--tw-text-shadow-color, rgb(0 0 0 / 0.15)) 2px 5px 0px;
+  }
+
+  .image-solid-shadow {
+    filter: drop-shadow(1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.15)));
   }
 
   .hc-button {
-    background-image: linear-gradient(90deg, #ffa23c 30%, #ffca92 50%, #ffa23c 70%);
-    background-size: 400%;
-    background-position: calc(0%) 0px;
-    border: var(--color-secondary-bright) 0.3rem solid;
+    background-color: var(--secondary);
+    border: #0003 0.3rem solid;
     font-family: var(--font-primary);
     transition: all 0.3s ease-in-out;
     box-shadow: #000f 0px 0px 0px;
@@ -45,22 +54,27 @@
 
   .hc-button:hover {
     transform: translateY(-3px);
-    background-position: calc(98%) 0px;
     box-shadow: #0004 0px 6px 8px;
   }
 
-  .hc-button:focus {
-    transform: translateY(0px);
-    filter: brightness(1.05);
-    background-position: calc(98%) 0px;
-    box-shadow: #0004 0px 0px 0px;
-  }
-
+  .hc-button:focus,
   .hc-button:active {
     transform: translateY(5px);
     filter: brightness(1.05);
-    background-position: calc(98%) 0px;
     box-shadow: #0004 0px 0px 0px;
+  }
+
+  a {
+    color: white;
+    opacity: 100%;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  img {
+    user-select: none;
   }
 }
 
@@ -77,6 +91,8 @@
   --color-hc-brown: var(--hc-brown);
   --color-hc-ice: var(--hc-ice);
   --color-hc-tortoise: var(--hc-tortoise);
+  --color-hc-border: var(--hc-border);
+  --color-hc-paper: var(--hc-paper);
 
   --font-primary: var(--font-primary);
   --font-subheading: var(--font-subheading);

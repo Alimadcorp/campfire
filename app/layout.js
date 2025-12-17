@@ -62,7 +62,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" crosspilot="" suppressHydrationWarning>
       <body
-        className={`${primaryFont.variable} ${secFont.variable} ${sourceSerif.variable} antialiased`}
+        className={`${primaryFont.variable} ${secFont.variable} ${sourceSerif.variable} antialiased bg-primary`}
         suppressHydrationWarning
       >
         {children}
