@@ -7,6 +7,7 @@
 
     --primary: #53bfff;
     --secondary: #ffa23c;
+    --secondary-bright: #feb76c;
 
     --hc-star: #384fbc;
     --hc-emerald: #52cb77;
@@ -25,26 +26,59 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
-    font-family: var(--font-primary, --font-geist-sans, Arial, Helvetica, sans-serif);
+    font-family: var(--font-serif, Arial, Helvetica, sans-serif);
+  }
+
+  .solid-shadow {
+    text-shadow: var(--tw-text-shadow-color, rgb(0 0 0 / 0.15)) 2px 4px 0px;
+  }
+
+  .hc-button {
+    background-image: linear-gradient(90deg, #ffa23c 30%, #ffca92 50%, #ffa23c 70%);
+    background-size: 400%;
+    background-position: calc(0%) 0px;
+    border: var(--color-secondary-bright) 0.3rem solid;
+    font-family: var(--font-primary);
+    transition: all 0.3s ease-in-out;
+    box-shadow: #000f 0px 0px 0px;
+  }
+
+  .hc-button:hover {
+    transform: translateY(-3px);
+    background-position: calc(100%) 0px;
+    box-shadow: #0004 0px 6px 8px;
+  }
+
+  .hc-button:focus {
+    transform: translateY(0px);
+    filter: brightness(1.05);
+    background-position: calc(100%) 0px;
+    box-shadow: #0004 0px 0px 0px;
+  }
+
+  .hc-button:active {
+    transform: translateY(5px);
+    filter: brightness(1.05);
+    background-position: calc(100%) 0px;
+    box-shadow: #0004 0px 0px 0px;
   }
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  
+
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
-  
+  --color-secondary-bright: var(--secondary-bright);
+
   --color-hc-star: var(--hc-star);
   --color-hc-emerald: var(--hc-emerald);
   --color-hc-brown: var(--hc-brown);
   --color-hc-ice: var(--hc-ice);
   --color-hc-tortoise: var(--hc-tortoise);
-  
+
   --font-primary: var(--font-primary);
   --font-subheading: var(--font-subheading);
   --font-serif: var(--font-source-serif);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
 }

@@ -23,16 +23,6 @@ export const sourceSerif = Source_Serif_4({
   display: "swap",
 });
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata = {
   title: "Campfire Lahore - Lahore Game jam",
   description:
@@ -48,9 +38,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" crosspilot="" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${primaryFont.variable} ${secFont.variable} ${sourceSerif.variable} antialiased`}
+        className={`${primaryFont.variable} ${secFont.variable} ${sourceSerif.variable} antialiased`}
+        suppressHydrationWarning
       >
         {children}
       </body>
