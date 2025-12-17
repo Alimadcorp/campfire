@@ -11,7 +11,7 @@ export default function Home() {
           Game jam for high schoolers in 200+ cities<br/>Feb 28 - Mar 1, 2026
         </p>
         <a
-          href="https://alimad.fillout.com/campfire"
+          href="https://forms.hackclub.com/t/a3QSt8MuvHus"
           className="hc-button rounded-2xl font-primary px-6 py-3 text-3xl"
         >
           RSVP Now
