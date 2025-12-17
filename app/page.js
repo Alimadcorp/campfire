@@ -154,12 +154,12 @@ export default function Home() {
           </div>
           <FAQ />
           <footer className="w-full px-0 py-0 text-white">
-            <div className="mx-auto grid gap-12 md:grid-cols-3 font-subheading">
-              <div className="flex flex-col gap-4 md:text-right">
+            <div className="mx-auto grid gap-12 sm:grid-cols-3 font-subheading">
+              <div className="flex flex-col gap-4 sm:text-right">
                 <p className="text-xl text-transparent font-subheading mb-0">
                   -
                 </p>
-                <nav className="hidden flex-col gap-2 text-2xl md:flex">
+                <nav className="hidden flex-col gap-2 text-2xl sm:flex">
                   <a href="https://hackclub.com" className="hover:underline">
                     Hack Club
                   </a>
@@ -183,11 +183,11 @@ export default function Home() {
                   </a>
                 </nav>
 
-                <p className="text-xs opacity-60 font-bold hidden md:inline">
+                <p className="text-xs opacity-60 font-bold hidden sm:inline">
                   © 2026 Hack Club. 501(c)(3) nonprofit (EIN: 81-2908499)
                 </p>
               </div>
-              <div className="text-left text-base leading-relaxed md:col-span-2 md:text-white text-black">
+              <div className="text-left text-base leading-relaxed sm:col-span-2 sm:text-white text-black">
                 <p className="text-xl font-subheading mb-4 opacity-80">
                   made with love by Hack Club & Open Sauce
                 </p>
@@ -198,7 +198,7 @@ export default function Home() {
                   you can make awesome projects.
                 </p>
 
-                <p className="mt-4 md:text-white/80 text-black/80">
+                <p className="mt-4 sm:text-white/80 text-black/80">
                   In the past few years, we've partnered with GitHub to run{" "}
                   <a href="https://summer.hackclub.com">Summer of Making</a>,
                   hosted the{" "}
@@ -217,7 +217,7 @@ export default function Home() {
                   shipping.
                 </p>
               </div>
-              <nav className="flex flex-col gap-2 text-lg md:hidden">
+              <nav className="flex flex-col gap-2 text-lg sm:hidden">
                 <a href="https://hackclub.com" className="hover:underline">
                   Hack Club
                 </a>
@@ -240,7 +240,7 @@ export default function Home() {
                   Code of Conduct
                 </a>
 
-                <p className="text-sm opacity-60 font-bold md:hidden">
+                <p className="text-sm opacity-60 font-bold sm:hidden">
                   © 2026 Hack Club. 501(c)(3) nonprofit (EIN: 81-2908499)
                 </p>
               </nav>
