@@ -138,13 +138,13 @@ export default function Home() {
           >
             RSVP Now
           </a>
-          <p className="text-md font-subheading">
+          <p className="text-lg font-subheading text-white/80">
             Follow{" "}
             <a
               href="https://instagram.com/campfire.lahore"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block text-white/80 tracking-wide"
+              className="mt-2 inline-block tracking-wide"
             >
               @campfire.lahore
             </a>{" "}
