@@ -128,6 +128,8 @@ export default function Home() {
           <p className="max-w-xl sm:text-2xl text-lg text-white/90 tracking-wide font-subheading text-shadow-2xs">
             Game jam for High schoolers
             <br />
+            Feb 28 - Mar 1
+            <br />
             Organized by Teenagers in Lahore
           </p>
           <a
@@ -136,6 +138,19 @@ export default function Home() {
           >
             RSVP Now
           </a>
+          <p>
+            Follow{" "}
+            <a
+              href="https://instagram.com/campfire.lahore"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 inline-block text-white/80 text-sm tracking-wide"
+            >
+              @campfire.lahore
+            </a>{" "}
+            on Instagram for updates
+          </p>
+
           <div className="relative w-full max-w-4xl mx-auto">
             <div className="relative hidden lg:block aspect-4/3">
               <img

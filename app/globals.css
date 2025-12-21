@@ -60,6 +60,9 @@
   a {
     font-weight: bold;
     opacity: 100%;
+  }
+
+  a:hover {
     text-decoration: underline;
   }
 
